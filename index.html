@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiptoo</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDv9t_uTd2iQP7NOUCizs8AQyNKd_kOClEuQ&s">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <!--  Positions
+
+   -- Sticky
+
+    position : sticky;  -> for top
+    top:0;
+    position : sticky;  -> for bottom
+    bottom:0;
+
+  -- Fixed
+
+    position : fixed;  -> for top
+    top:0;
+
+    position : fixed;  -> for bottom
+    bottom:0;
+
+    position : fixed;  -> for top left                                                                                               
+    top:0;                                                                                                                                        
+    left:0;                                                                                                                                    
+
+    position : fixed;  -> for top right
+    top:0;
+    rigth:0;
+
+    position : fixed;  -> for bottom left
+    bottom:0;
+    left:0;
+
+    position : fixed;  -> for bottom right
+    bottom:0;
+    rigth:0;
+
+    -- Releative and Absolute
+    -> realtive for parent container or Background container
+    -> absolute for content or child container
+
+    ex :-
+    .parentcontainer
+    {
+    position : relative;
+    }
+    .child
+    {
+    position : absolute;
+    top:0;
+    }
+
+
+    -->
+    <div class="food_app">
+        <nav class="nav">
+            <div class="logo">
+                <img src="data:image/jpeg;base64,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">
+                <h1>kiptoo</h1>
+            </div>
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Cuisines</a>
+                <a href="">Catering</a>
+                <a href="">Cart</a>
+
+            </div>
+            <div class="btns">
+                <button>Sign In</button>
+                <button>Sign Up</button>
+            </div>
+
+        </nav>
+        <div class="video">
+            <video  muted autoplay loop  src="./199249-909835726_medium.mp4" ></video>
+            <div class="con1">
+                <h2>Biryani is not just food, it's an emotion.</h2>
+                <h3>If you can't handle the heat, don't order the biryani.</h3>
+                <p>EAT SLEEP CODE</p>
+
+            </div>
+        </div>
+        <div class="whatsapp">
+            <i class="bi bi-whatsapp"></i>
+            <p>Contact Us</p>
+
+        </div>
+
+        <div class="food-card">
+            <div class="food">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/941715954/photo/spicy-indian-chicken-biriyani-rice-with-sliced-eggs-and-garnished-with-vegetables.jpg?s=612x612&w=0&k=20&c=40nSvuv6bVYsVfk0TSwHGOm6T8XWPKDlYNuJyDy2cmc=" >
+
+                </div>
+                <h1>tasty Biriyani</h1>
+                <h2>599 rs</h2>
+                <p>The Best Biriyani in city</p>
+            </div>
+            <div class="food">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/941715954/photo/spicy-indian-chicken-biriyani-rice-with-sliced-eggs-and-garnished-with-vegetables.jpg?s=612x612&w=0&k=20&c=40nSvuv6bVYsVfk0TSwHGOm6T8XWPKDlYNuJyDy2cmc=" >
+
+                </div>
+                <h1>tasty Biriyani</h1>
+                <h2>599 rs</h2>
+                <p>The Best Biriyani in city</p>
+            </div>
+            <div class="food">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/941715954/photo/spicy-indian-chicken-biriyani-rice-with-sliced-eggs-and-garnished-with-vegetables.jpg?s=612x612&w=0&k=20&c=40nSvuv6bVYsVfk0TSwHGOm6T8XWPKDlYNuJyDy2cmc=" >
+
+                </div>
+                <h1>tasty Biriyani</h1>
+                <h2>599 rs</h2>
+                <p>The Best Biriyani in city</p>
+            </div>
+            <div class="food">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/941715954/photo/spicy-indian-chicken-biriyani-rice-with-sliced-eggs-and-garnished-with-vegetables.jpg?s=612x612&w=0&k=20&c=40nSvuv6bVYsVfk0TSwHGOm6T8XWPKDlYNuJyDy2cmc=" >
+
+                </div>
+                <h1>tasty Biriyani</h1>
+                <h2>599 rs</h2>
+                <p>The Best Biriyani in city</p>
+            </div>
+            <div class="food">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/941715954/photo/spicy-indian-chicken-biriyani-rice-with-sliced-eggs-and-garnished-with-vegetables.jpg?s=612x612&w=0&k=20&c=40nSvuv6bVYsVfk0TSwHGOm6T8XWPKDlYNuJyDy2cmc=" >
+
+                </div>
+                <h1>tasty Biriyani</h1>
+                <h2>599 rs</h2>
+                <p>The Best Biriyani in city</p>
+            </div>
+            <div class="food">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/941715954/photo/spicy-indian-chicken-biriyani-rice-with-sliced-eggs-and-garnished-with-vegetables.jpg?s=612x612&w=0&k=20&c=40nSvuv6bVYsVfk0TSwHGOm6T8XWPKDlYNuJyDy2cmc=" >
+
+                </div>
+                <h1>tasty Biriyani</h1>
+                <h2>599 rs</h2>
+                <p>The Best Biriyani in city</p>
+            </div>
+            <div class="food">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/941715954/photo/spicy-indian-chicken-biriyani-rice-with-sliced-eggs-and-garnished-with-vegetables.jpg?s=612x612&w=0&k=20&c=40nSvuv6bVYsVfk0TSwHGOm6T8XWPKDlYNuJyDy2cmc=" >
+
+                </div>
+                <h1>tasty Biriyani</h1>
+                <h2>599 rs</h2>
+                <p>The Best Biriyani in city</p>
+            </div>
+            <div class="food">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/941715954/photo/spicy-indian-chicken-biriyani-rice-with-sliced-eggs-and-garnished-with-vegetables.jpg?s=612x612&w=0&k=20&c=40nSvuv6bVYsVfk0TSwHGOm6T8XWPKDlYNuJyDy2cmc=" >
+
+                </div>
+                <h1>tasty Biriyani</h1>
+                <h2>599 rs</h2>
+                <p>The Best Biriyani in city</p>
+            </div>
+            <div class="food">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/941715954/photo/spicy-indian-chicken-biriyani-rice-with-sliced-eggs-and-garnished-with-vegetables.jpg?s=612x612&w=0&k=20&c=40nSvuv6bVYsVfk0TSwHGOm6T8XWPKDlYNuJyDy2cmc=" >
+
+                </div>
+                <h1>tasty Biriyani</h1>
+                <h2>599 rs</h2>
+                <p>The Best Biriyani in city</p>
+            </div>
+           
+
+        </div>
+    </div>
+</body>
+</html>
